@@ -1,0 +1,19 @@
+syntax: glob
+*.pyc
+*.pyo
+*.DS_Store
+*.installed.cfg
+*build/
+local_settings.py
+*dist/
+*.egg-info/
+*~
+media/*
+env/*
+.idea*
+wsgi.py*
+docker-compose.yml
+dump.sql
+archive.zip
+.env
+node_modules/

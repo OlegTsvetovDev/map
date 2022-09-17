@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="css/lk_styles.min.css">
+  <title>Map</title>
+</head>
+<body>
+  <div class="category category-filter check">
+    <div class="title">
+      <h2>Категория</h2>
+    </div>
+    <div class="block">
+      <div class="check">
+        <input type="checkbox" value="60" class="parent" id="check-60">
+        <label for="check-60">Общественный транспорт</label>
+        <div class="hide">
+          <div class="check">
+            <div>
+              <input type="checkbox" value="61" class="children" id="check-61">
+              <label for="check-61">Автобусы</label>
+            </div>
+          </div>
+          <div class="check">
+            <div>
+              <input type="checkbox" value="62" class="children" id="check-62">
+              <label for="check-62">Троллейбусы</label>
+            </div>
+          </div>
+          <div class="check">
+            <div>
+              <input type="checkbox" value="63" class="children" id="check-63">
+              <label for="check-63">Трамваи</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="filter select-type">
+      <div class="header">
+        <h2 class="header__header">Быстрые фильтры</h2>
+      </div>
+      <label for="fast-filter-1">
+        <div class="item " data-ico="i1">
+          <img src="./images/div_1_img_1.png" alt="Нарушение зрения">
+          <p>Нарушение зрения</p>
+          <input type="checkbox" id="fast-filter-1" hidden>
+        </div>
+      </label>
+      <label for="fast-filter-2">
+        <div class="item " data-ico="i2">
+          <img src="./images/div_1_img_2.png" alt="Нарушение слуха">
+          <p>Нарушение слуха</p>
+          <input type="checkbox" id="fast-filter-2" hidden>
+        </div>
+      </label>
+      <label for="fast-filter-3">
+        <div class="item " data-ico="i3">
+          <img src="./images/div_1_img_3.png" alt="Нарушение опорно-двигательной системы">
+          <p>Нарушение опорно-двигательной системы</p>
+          <input type="checkbox" id="fast-filter-3" hidden>
+        </div>
+      </label>
+      <label for="fast-filter-4">
+        <div class="item " data-ico="i4">
+          <img src="./images/div_1_img_4.png" alt="На кресле-коляске">
+          <p>На кресле-коляске</p>
+          <input type="checkbox" id="fast-filter-4" hidden>
+        </div>
+      </label>
+      <label for="fast-filter-5">
+        <div class="item " data-ico="i5">
+          <img src="./images/div_1_img_5.png" alt="Нарушение развития">
+          <p>Нарушение развития</p>
+          <input type="checkbox" id="fast-filter-5" hidden>
+        </div>
+      </label>
+      <label for="fast-filter-6">
+        <div class="item item_active" data-ico="i6">
+          <img src="./images/bus-icons-blue.png" alt="Транспорт">
+          <p>Транспорт</p>
+          <input type="checkbox" id="fast-filter-6" checked hidden>
+        </div>
+      </label>
+      <!-- <label class="item" for="fast-filter-1" data-ico="i1">
+        <img src="./images/div_1_img_5.png" alt="Нарушение развития">
+          <p>Нарушение зрения</p>
+          <input type="checkbox" id="fast-filter-1" hidden />
+      </label>
+      <label class="item" for="fast-filter-2" data-ico="i2">
+          <p>Нарушение слуха</p>
+          <input type="checkbox" id="fast-filter-2" hidden />
+      </label>
+      <label for="fast-filter-3" class="item" data-ico="i3">
+          <p>Нарушение опорно-двигательной системы</p>
+          <input type="checkbox" id="fast-filter-3" hidden />
+      </label>
+      <label for="fast-filter-4" class="item" data-ico="i4">
+          <p>На кресле-коляске</p>
+          <input type="checkbox" id="fast-filter-4" hidden />
+      </label>
+      <label for="fast-filter-5" class="item" data-ico="i5">
+          <p>Нарушение развития</p>
+          <input type="checkbox" id="fast-filter-5" hidden />
+      </label>
+      <label for="check-60">
+          <div class="item item_active" data-ico="i6">
+              <p>Транспорт</p>
+          </div>
+      </label> -->
+  </div>
+  <div id="map"></div>
+  <!-- <script src="js/jquery-1.11.3.min.js"></script> -->
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=66714d1b-3656-43a0-af5e-a848db17e04d" type="text/javascript"></script>
+  <script src="js/mapTransport.js"></script>
+</body>
+</html>
